@@ -57,7 +57,7 @@
 		<table>
 		<tr><th class="tHeader">Name</th><th class="tHeader">Address</th><th class="tHeader">Wifi</th><th class="tHeader">Large Table</th><th class="tHeader">Outdoor Seating</th><th class="">Elsewhere</th></tr>
 		  {{#rows}}
-		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{wifipassword}}</td><td>{{largetable}}</td><td>{{outdoorseating}}</td><td><a class="button" href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">G Map</a> <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a></td></tr>
+		  	<tr id="{{rowNumber}}" class="spotRow"><td>{{name}}</td><td>{{address}}</td><td>{{wifipassword}}</td><td>{{largetable}}</td><td>{{outdoorseating}}</td><td><a class="button" href="https://maps.google.com/maps?q={{name}} {{address}},{{city}},{{state}}" target="_blank">G Map</a> <!-- <a class="button" href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Yelp</a> --> </td></tr>
 		  	<tr class="hideRow"><td>wifi: {{wifipassword}}</td></tr>
 		  {{/rows}}
 	  </table>
@@ -79,8 +79,8 @@
 			  	<li><span class="category">Contributed By:</span> <a href="http://www.twitter.com/{{contributerstwitter}}" target="_blank">@{{contributerstwitter}}</a></li>
 		  	</ul>
 		  	<ul>
-		  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-		  		<li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
+		  		<li><a href="https://maps.google.com/maps?q={{name}}, {{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
+		  		<!-- <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li> -->
 		  	</ul>
 		  {{/rows}}
 	</script>
@@ -108,8 +108,8 @@
 		  	<li><span class="category">Brewing:</span> {{brewing}}</li>
 	  	</ul>
 	  	<ul>
-	  		<li><a href="https://maps.google.com/maps?q={{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
-	  		<li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li>
+	  		<li><a href="https://maps.google.com/maps?q={{name}}, {{address}},{{city}},{{state}}" target="_blank">View in Google Maps</a></li>
+	  		<! -- <li><a href="http://www.yelp.com/search?find_desc={{name}}&find_loc={{city}},{{state}}" target="_blank">Find on Yelp</a></li> -->
 	  	</ul>
 	  {{/rows}}
 	</script>
